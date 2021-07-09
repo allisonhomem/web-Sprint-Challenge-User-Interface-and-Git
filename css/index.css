@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+/* CSS reset stuff */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,13 +47,19 @@ table {
 	border-spacing: 0;
 }
 
+
+
+/* Where the styling begins */
 * {
     box-sizing: border-box;
+    border: 1px dotted black;
 }
 
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    width: 800px;
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -66,9 +72,8 @@ p {
     line-height: 1.4;
 }
 
-.container {
-    width: 800px;
-    margin: 0 auto;
+main {
+    
 }
 
 .top-content {
