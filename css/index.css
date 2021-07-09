@@ -52,7 +52,7 @@ table {
 /* Where the styling begins */
 * {
     box-sizing: border-box;
-    color: black;
+    color: black; 
 }
 
 html, body {
@@ -62,7 +62,7 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
-header, header nav, .top-content, .middle-content .boxes, .middle-content .boxes .box, .bottom-content, footer nav {
+header, header nav, .top-content, .middle-content .boxes, .middle-content .blocks, .middle-content .boxes .box, .bottom-content, footer nav {
     display: flex;
 }
 
@@ -74,14 +74,13 @@ header nav {
     justify-content: space-around;
     align-items: flex-end;
     flex-grow: 4;
-
 }
 
-nav a {
+a {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
@@ -96,25 +95,30 @@ p {
     justify-content: space-evenly;
     margin: 20px 0;
     border-bottom: 1px dashed black;
+    padding-bottom: 20px; 
 }
 
-.top-content .text-container {
-    width: 48%;
+.top-content h2 {
+    
+}
+
+.top-content .text-container, .block {
+    width: 47%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+     
 }
 
-.middle-content {
+.middle-content, .block {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
 
-.middle-content h2 {
+.middle-content h2, .middle content h3 {
     padding: 0 2%;
     margin-bottom: 0;
 }
 
-.middle-content .boxes {
+.middle-content .boxes, .middle-content .blocks {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
@@ -167,6 +171,15 @@ p {
 
 #box10 {
     background: dodgerblue;
+}
+
+.learn_button {
+    align-items: center;
+    justify-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px;
 }
 
 .bottom-content {
