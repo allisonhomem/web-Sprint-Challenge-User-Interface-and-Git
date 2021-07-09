@@ -62,7 +62,7 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
-header, header nav, .top-content, .middle-content .boxes, .middle-content .blocks, .middle-content .boxes .box, .bottom-content, footer nav {
+header, header nav, .top-content, .middle-content .boxes, .blocks, .middle-content .boxes .box, .bottom-content, footer nav {
     display: flex;
 }
 
@@ -98,14 +98,18 @@ p {
     padding-bottom: 20px; 
 }
 
-.top-content h2 {
-    
-}
-
-.top-content .text-container, .block {
-    width: 47%;
+.top-content .text-container {
+    width: 48%;
     padding: 0 1%;
      
+}
+
+.about-content {
+    padding: 20px;
+}
+
+#top {
+    border-bottom: 1px dashed black;
 }
 
 .middle-content, .block {
@@ -113,14 +117,28 @@ p {
     border-bottom: 1px dashed black;
 }
 
-.middle-content h2, .middle content h3 {
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    margin: 10px 0;
+    width: 47%;
+}
+
+.middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
 }
 
-.middle-content .boxes, .middle-content .blocks {
+h3 {
+    margin: 10px 0;
+}
+
+.middle-content .boxes, .blocks {
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .middle-content .boxes .box {
@@ -178,8 +196,8 @@ p {
     justify-items: center;
     border: 2px solid black;
     border-radius: 10px;
-    padding: 5px 10px;
-    margin: 5px;
+    padding: 10px 20px;
+    margin: 15px 0 10px 0;
 }
 
 .bottom-content {
@@ -193,6 +211,10 @@ p {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+#bottom {
+    margin-bottom: 25px;
 }
 
 footer {
