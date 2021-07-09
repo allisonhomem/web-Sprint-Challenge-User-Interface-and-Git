@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+/* CSS reset stuff */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,16 +47,41 @@ table {
 	border-spacing: 0;
 }
 
+
+
+/* Where the styling begins */
 * {
     box-sizing: border-box;
+    color: black; 
 }
 
 html, body {
     height: 100%;
+    width: 800px;
+    margin: 0 auto;
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+header, header nav, .top-content, .middle-content .boxes, .blocks, .block, .middle-content .boxes .box, .bottom-content, footer nav {
+    display: flex;
+}
+
+header {
+    margin: 20px 0 40px 0;
+}
+
+header nav {
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-grow: 4;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
@@ -66,28 +91,40 @@ p {
     line-height: 1.4;
 }
 
-.container {
-    width: 800px;
-    margin: 0 auto;
-}
-
 .top-content {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin: 20px 0;
     border-bottom: 1px dashed black;
+    padding-bottom: 20px; 
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+     
 }
 
-.middle-content {
+.about-content {
+    padding: 20px;
+}
+
+#top {
+    border-bottom: 1px dashed black;
+}
+
+.middle-content, .block {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+
+.block {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    margin: 10px 0;
+    width: 47%;
 }
 
 .middle-content h2 {
@@ -95,10 +132,13 @@ p {
     margin-bottom: 0;
 }
 
-.middle-content .boxes {
-    display: flex;
+h3 {
+    margin: 10px 0;
+}
+
+.middle-content .boxes, .blocks {
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .middle-content .boxes .box {
@@ -107,13 +147,60 @@ p {
     background: black;
     margin: 20px 2.5%;
     color: white;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
 
+#box1 {
+    background: teal;
+}
+
+#box2 {
+    background: gold;
+}
+
+#box3 {
+    background: cadetblue;
+}
+
+#box4 {
+    background: coral;
+}
+
+#box5 {
+    background: crimson;
+}
+
+#box6 {
+    background: forestgreen;
+}
+
+#box7 {
+    background: darkorchid;
+}
+
+#box8 {
+    background: hotpink;
+}
+
+#box9 {
+    background: indigo;
+}
+
+#box10 {
+    background: dodgerblue;
+}
+
+.learn_button {
+    align-items: center;
+    justify-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 15px 0 10px 0;
+}
+
 .bottom-content {
-    display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
@@ -126,6 +213,10 @@ p {
     padding-right: 0;
 }
 
+#bottom {
+    margin-bottom: 25px;
+}
+
 footer {
     width: 100%;
     background: black;
@@ -133,7 +224,6 @@ footer {
 
 footer nav {
     width: 60%;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
@@ -142,5 +232,4 @@ footer nav {
 
 footer nav a {
     color: white;
-    text-decoration: none;
 }
