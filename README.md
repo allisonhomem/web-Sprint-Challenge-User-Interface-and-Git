@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+Semantic HTML is a collection of tags in HTML which create block-elements, like div's do, but are more descriptive of the content they contain. They make applying CSS to elements easier, and help internet search engines find the important information on your webpage.
+
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+
+Display:block displays all elements in that container as block elements, so they take up an entire horizontal line by themselves. Display:inline displays all elements in that container as inline elements, so the elements appear consecutively in line next to the previous and following elements. You may apply certain CSS stylings like "flexbox" to organize block elements, but you cannot use that particular module of styling on inline elements.
 
 3. What are the 4 areas of the box model?
 
+Going from innermost to outermost: Content, Padding, Border, Margin.
+
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+The property align-items: center will align the items along the center line of the axis that opposes the main axis. If the flex-direction is row, this would be the vertical axis, and if the flex-direction is column, then this would be the horizontal axis.
+
 5. Explain why git is valuable to a team of developers.
+
+Git allows multiple users to work on the same code independently, without changing what the others are doing, and then patch all of the non-conflicting code back together. This is really useful for divying up the work on big projects so that each developer can work on a smaller, more manageable piece of code and then seamlessly merge all of the final code together.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
